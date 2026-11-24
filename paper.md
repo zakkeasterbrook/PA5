@@ -2,6 +2,8 @@
 
 **Zakk Easterbrook — AI-assisted preliminary research note, 2026-11-24, v0.1.0**
 
+> **Numerical erratum:** see [AUDIT.md](AUDIT.md) for a reproducible finite-precision counterexample, fresh benchmark replication, and an optional range-screened mitigation. The theorem requires valid real-arithmetic bounds; the prototype does not universally guarantee floating-point decisions.
+
 ## Abstract
 
 We study a restricted decision problem: preserve the unique argmax of a bias-free linear readout following a single attention calculation while selectively avoiding reads of the original keys and values. A block descriptor stores key and value centroids, a maximum key radius, and a value residual Frobenius norm. Two deterministic real-arithmetic bounds enable progression from summaries to exact keys and finally exact values. A margin test either certifies a unique winner or abstains; dense evaluation is the fallback. Exact rational property testing found no violations in 36,176 checks; a separate numerical implementation matched its dense reference across 96 synthetic long-context fixtures and 4,000 additional stress evaluations. At 524,288 entries, the concentrated synthetic geometry required 5.49% of modeled dense cache reads and measured 4.92x reference speed. Diffuse and tied geometries were slower. These are not claims about full LLMs, GPU speed, or state-of-the-art performance.

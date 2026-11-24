@@ -1,0 +1,11 @@
+{
+  "fixtures": 1800,
+  "evaluations": 3600,
+  "original_disagreements": 0,
+  "guarded_disagreements": 0,
+  "guarded_accepted": 331,
+  "range_fallbacks": 3204,
+  "explicit_counterexample_reproduced": true,
+  "mutation_regression_passed": true,
+  "overflow_rejected": true
+}

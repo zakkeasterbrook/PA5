@@ -10,6 +10,8 @@ Zakk Easterbrook · November 24, 2026 · Research prototype v0.1.0
 
 > **Research status:** Preliminary, AI-assisted research; not peer-reviewed. The mathematical guarantee concerns an attention operation with a bias-free linear readout in exact real arithmetic. The numerical experiments use synthetic data, not end-to-end pretrained language model inference.
 
+> **Post-publication numerical audit (Nov. 24, 2026):** the full original experiment suite reproduced, but an extreme-scale float64 counterexample exposes an incorrect acceptance in the original prototype. See [the audit and erratum](AUDIT.md) and the optional [range-screened wrapper](pa5_guarded.py). The real-arithmetic theorem is unchanged; the implementation is not a universally certified floating-point algorithm. Original benchmarks remain for the unmodified prototype.
+
 ## Abstract
 
 Transformer inference can be constrained by the cost of reading key–value (KV) cache memory. Most efficiency methods approximate attention, reduce the stored cache, or select which cache entries to access. PA5 investigates a narrower question: **can the winning decision of an attention readout be established before retrieving the original keys and values?**
