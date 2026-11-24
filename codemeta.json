@@ -2,7 +2,7 @@
   "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
   "@type": "SoftwareSourceCode",
   "name": "Predictive Atom 5 (PA5): Decision-Certified Key-Value Cache Retrieval for Efficient AI Inference",
-  "description": "Preliminary AI-assisted research prototype for progressive key-value retrieval with real-arithmetic decision bounds for a bias-free attention readout. Includes exact-rational checks, synthetic CPU benchmarks, original trial data, proof and limitations.",
+  "description": "Preliminary AI-assisted research prototype for progressive key-value retrieval with real-arithmetic decision bounds for a bias-free attention readout. Includes exact-rational checks, synthetic CPU benchmarks, original trial data, proof, limitations, and a post-publication numerical erratum documenting an original float64 counterexample. No full-model or universal numerical correctness claim.",
   "codeRepository": "https://github.com/zakkeasterbrook/PA5",
   "url": "https://github.com/zakkeasterbrook/PA5",
   "version": "0.1.0",
@@ -11,7 +11,8 @@
     {
       "@type": "Person",
       "givenName": "Zakk",
-      "familyName": "Easterbrook"
+      "familyName": "Easterbrook",
+      "url": "https://github.com/zakkeasterbrook"
     }
   ],
   "programmingLanguage": "Python",
@@ -31,5 +32,6 @@
     "argmax preservation",
     "memory bandwidth",
     "reproducible research"
-  ]
+  ],
+  "identifier": "https://github.com/zakkeasterbrook/PA5"
 }

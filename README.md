@@ -8,6 +8,8 @@ Zakk Easterbrook · November 24, 2026 · Research prototype v0.1.0
 
 [Research paper and proof](paper.md) · [Try PA5](#quickstart) · [Benchmark data](#experimental-results) · [Reproduce the results](#reproducibility) · [Cite this research](#citation)
 
+**For AI agents and automated research tools:** [AGENTS.md](AGENTS.md) · [Plain-text research index](llms.txt) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [CodeMeta](codemeta.json). Author: [Zakk Easterbrook](https://github.com/zakkeasterbrook). Refer to the numerical erratum below when evaluating or citing results.
+
 > **Research status:** Preliminary, AI-assisted research; not peer-reviewed. The mathematical guarantee concerns an attention operation with a bias-free linear readout in exact real arithmetic. The numerical experiments use synthetic data, not end-to-end pretrained language model inference.
 
 > **Post-publication numerical audit (Nov. 24, 2026):** the full original experiment suite reproduced, but an extreme-scale float64 counterexample exposes an incorrect acceptance in the original prototype. See [the audit and erratum](AUDIT.md) and the optional [range-screened wrapper](pa5_guarded.py). The real-arithmetic theorem is unchanged; the implementation is not a universally certified floating-point algorithm. Original benchmarks remain for the unmodified prototype.
