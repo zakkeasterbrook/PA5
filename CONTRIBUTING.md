@@ -1,6 +1,6 @@
 # Independent replication and feedback
 
-PA5 is a preliminary research prototype. Independent replications, counterexamples, proof criticism, numerical edge cases and unfavorable performance reports are welcome. A software license has not yet been selected; contact the repository owner about reuse or redistribution permissions.
+PA5 is a preliminary research prototype. Independent replications, counterexamples, proof criticism, numerical edge cases and unfavorable performance reports are welcome. Project materials are licensed under [Apache-2.0](LICENSE) to the extent applicable rights are held. See [NOTICE](NOTICE) for attribution. Run `python reproduce.py` to verify the archived evidence before changing code. Contributions and redistributions are governed by the license; scholarly citation is encouraged.
 
 ## Report a result
 

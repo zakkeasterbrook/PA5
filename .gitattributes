@@ -1,0 +1,6 @@
+# Preserve original scientific CSV bytes, including their original line endings.
+*.csv -text
+*.py text eol=lf
+*.json text eol=lf
+requirements.txt text eol=lf
+ARTIFACTS.sha256 text eol=lf

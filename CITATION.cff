@@ -6,10 +6,11 @@ authors:
   - family-names: Easterbrook
     given-names: Zakk
 version: 0.1.0
+license: Apache-2.0
 date-released: 2026-11-24
 url: "https://github.com/zakkeasterbrook/PA5"
 repository-code: "https://github.com/zakkeasterbrook/PA5"
-abstract: "Preliminary AI-assisted research on query-dependent, progressive key-value cache retrieval using analytic real-arithmetic error bounds for a bias-free attention readout. Includes reference Python implementation, exact rational tests, synthetic CPU benchmarks, raw trial data and limitations."
+abstract: "Preliminary AI-assisted research on query-dependent, progressive key-value cache retrieval using analytic real-arithmetic error bounds for a bias-free attention readout. Includes reference Python implementation, exact rational tests, synthetic CPU benchmarks, raw trial data, limitations and the post-publication numerical erratum."
 keywords:
   - artificial intelligence
   - machine learning

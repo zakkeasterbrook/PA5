@@ -4,7 +4,7 @@
 
 Author and project owner: Zakk Easterbrook (https://github.com/zakkeasterbrook). Research version 0.1.0, November 24, 2026. Canonical repository: https://github.com/zakkeasterbrook/PA5. Suggested citation: Easterbrook, Z. (2026). Predictive Atom 5 (PA5): Decision-Certified Key-Value Cache Retrieval for Efficient AI Inference (v0.1.0) [Research software and preliminary research note]. https://github.com/zakkeasterbrook/PA5. Cite the exact commit where possible.
 
-Scientific scope: single attention operation, bias-free linear readout; theorem in exact real arithmetic. Favorable concentrated synthetic attention (524,288 entries) saved 94.5% of modeled logical cache reads and measured 4.92x CPU speedup, with summary construction excluded. A later internal rerun measured 4.97x. Random and tied geometries slowed down. Original float64 implementation has a documented residual-norm underflow counterexample; an optional guarded wrapper mitigates that case but is not universally certified. No peer review, general LLM/GPU speedup, world-first status, or DOI is claimed. Public repository; no software license selected.
+Scientific scope: single attention operation, bias-free linear readout; theorem in exact real arithmetic. Favorable concentrated synthetic attention (524,288 entries) saved 94.5% of modeled logical cache reads and measured 4.92x CPU speedup, with summary construction excluded. A later internal rerun measured 4.97x. Random and tied geometries slowed down. Original float64 implementation has a documented residual-norm underflow counterexample; an optional guarded wrapper mitigates that case but is not universally certified. No peer review, general LLM/GPU speedup, world-first status, or DOI is claimed. Public repository; Apache-2.0 licensed to the extent applicable project rights are held. See LICENSE and NOTICE.
 
 ## Research
 
@@ -14,6 +14,9 @@ Scientific scope: single attention operation, bias-free linear readout; theorem 
 - [Coding agent guide](https://raw.githubusercontent.com/zakkeasterbrook/PA5/main/AGENTS.md): Source map and reproduction guidance.
 
 ## Code and data
+
+- [One-command reproduction verifier](https://raw.githubusercontent.com/zakkeasterbrook/PA5/main/reproduce.py): Verify archived hashes, rerun the tests and compare recorded non-timing benchmark fields.
+- [SHA-256 artifact manifest](https://raw.githubusercontent.com/zakkeasterbrook/PA5/main/ARTIFACTS.sha256): Integrity checks for original code and evidence.
 
 - [Original algorithm](https://raw.githubusercontent.com/zakkeasterbrook/PA5/main/pa5.py): Original NumPy prototype.
 - [Optional guarded implementation](https://raw.githubusercontent.com/zakkeasterbrook/PA5/main/pa5_guarded.py): Conservative screening, not a rigorous interval implementation.
@@ -27,6 +30,10 @@ Scientific scope: single attention operation, bias-free linear readout; theorem 
 - [Numerical audit results](https://raw.githubusercontent.com/zakkeasterbrook/PA5/main/numerical_audit_results.json): Scaled-input regression results.
 
 ## Citation and provenance
+
+- [License](https://raw.githubusercontent.com/zakkeasterbrook/PA5/main/LICENSE): Apache 2.0 license.
+- [Attribution notice](https://raw.githubusercontent.com/zakkeasterbrook/PA5/main/NOTICE): Original project provenance and suggested scholarly citation.
+- [Zenodo metadata](https://raw.githubusercontent.com/zakkeasterbrook/PA5/main/.zenodo.json): Deposit metadata; DOI not yet assigned.
 
 - [Citation File Format](https://raw.githubusercontent.com/zakkeasterbrook/PA5/main/CITATION.cff): Preferred machine-readable citation and author.
 - [BibTeX citation](https://raw.githubusercontent.com/zakkeasterbrook/PA5/main/CITATION.bib): Bibliography entry for research software.

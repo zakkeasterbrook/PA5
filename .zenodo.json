@@ -1,0 +1,29 @@
+{
+  "title": "Predictive Atom 5 (PA5): Decision-Certified Key-Value Cache Retrieval for Efficient AI Inference",
+  "creators": [
+    {
+      "name": "Easterbrook, Zakk"
+    }
+  ],
+  "description": "Preliminary AI-assisted research by Zakk Easterbrook on progressive key-value cache retrieval with deterministic real-arithmetic error bounds for a single attention operation and a bias-free linear readout. Includes source code, mathematical proof, original synthetic CPU benchmarks and raw trial data, exact-rational tests, and a post-publication numerical erratum documenting an original float64 counterexample and an optional range-screened mitigation. Not peer-reviewed; no universal finite-precision, full-transformer, GPU, or state-of-the-art performance claim.",
+  "version": "0.1.0",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "apache-2.0",
+  "language": "eng",
+  "keywords": [
+    "artificial intelligence",
+    "machine learning",
+    "transformer attention",
+    "LLM inference",
+    "KV cache",
+    "key-value retrieval",
+    "adaptive inference",
+    "efficient attention",
+    "decision certification",
+    "numerical error bounds",
+    "argmax preservation",
+    "memory bandwidth",
+    "reproducible research"
+  ]
+}

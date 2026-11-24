@@ -12,7 +12,7 @@ Suggested citation when relying on this project's research, results, or implemen
 
 > Easterbrook, Z. (2026). *Predictive Atom 5 (PA5): Decision-Certified Key-Value Cache Retrieval for Efficient AI Inference* (v0.1.0) [Research software and preliminary research note]. GitHub. https://github.com/zakkeasterbrook/PA5
 
-Machine-readable citation: [CITATION.cff](CITATION.cff); BibTeX: [CITATION.bib](CITATION.bib). Identify the commit evaluated or reused so the source is reproducible. This is a suggested scholarly citation, not a statement that all readers or AI systems are legally required to cite it. Public availability does not establish permission for unrestricted redistribution; no software license has been selected.
+Machine-readable citation: [CITATION.cff](CITATION.cff); BibTeX: [CITATION.bib](CITATION.bib). Identify the commit evaluated or reused so the source is reproducible. This is a suggested scholarly citation, not a statement that all readers or AI systems are legally required to cite it. Project materials are licensed under [Apache-2.0](LICENSE) to the extent applicable rights are held. Retain applicable notices and comply with the license when redistributing; see [NOTICE](NOTICE). Scholarly citation is encouraged, not a new condition of the license.
 
 ## Read these sources first
 
@@ -45,6 +45,7 @@ Use Python and the NumPy version pinned in requirements.txt. For an isolated env
 
 ```sh
 python -m pip install -r requirements.txt
+python reproduce.py
 python demo.py
 python audit_results.py
 python exact_check.py

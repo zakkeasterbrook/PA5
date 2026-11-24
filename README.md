@@ -2,7 +2,7 @@
 
 **Decision-Certified Key–Value Cache Retrieval for Efficient AI Inference**
 
-Zakk Easterbrook · November 24, 2026 · Research prototype v0.1.0
+Zakk Easterbrook · November 24, 2026 · Research prototype v0.1.0 · [Apache-2.0](LICENSE)
 
 ![PA5: progressive retrieval of attention keys and values using mathematical error bounds](assets/pa5-architecture.svg)
 
@@ -203,6 +203,18 @@ The cache requires immutable full equal-size blocks. The query must include atte
 
 ## Reproducibility
 
+**One-command reproduction and integrity verification** (Python 3.13.5 and NumPy 2.3.5 were tested):
+
+```sh
+python -m pip install -r requirements.txt
+python reproduce.py
+# For the original full 524,288-entry benchmark, allow more time and memory:
+python reproduce.py --full
+```
+
+[reproduce.py](reproduce.py) verifies the SHA-256 hashes of 16 archived artifacts, reruns the demo and aggregate audit, exact-rational tests, original numerical stress tests and the numerical erratum regression suite, and compares all non-timing benchmark fields to the original data. It runs experiments in a temporary directory and preserves the original CSV/JSON evidence. Timing is deliberately not asserted across hardware. A local quick run matched the 72 original quick-benchmark records; the earlier full rerun matched all 288 original records (see [AUDIT.md](AUDIT.md)). Reproducing a known counterexample is part of the audit, not a proof of universal numerical correctness.
+
+
 From the repository root, after installing dependencies:
 
 ```sh
@@ -246,7 +258,7 @@ PA5 studies a particular progressive block-error rule for a bias-free linear arg
 - **Evidence:** reported speed and read savings come from synthetic geometries, not pretrained LLM workloads. No GPU, energy, full-model accuracy or general compression claim has been demonstrated.
 - **Baselines:** compare with optimized attention, query-aware sparsity, and adaptive cache retrieval on shared hardware and model traces.
 
-Independent replication, negative results and counterexamples are particularly valuable. See [CONTRIBUTING.md](CONTRIBUTING.md) for a structured replication checklist. No software license has yet been selected; consult the repository owner about permissions before reuse or redistribution.
+Independent replication, negative results and counterexamples are particularly valuable. See [CONTRIBUTING.md](CONTRIBUTING.md) for a structured replication checklist. The project is distributed under the [Apache License 2.0](LICENSE); see [NOTICE](NOTICE) for attribution and the suggested citation. The license applies to rights held by the project owner and does not change third-party terms. Academic citation is encouraged; the license does not impose a universal scholarly citation requirement.
 
 ## Citation
 
@@ -264,7 +276,7 @@ If referencing the research, cite the preliminary version and the commit used fo
 }
 ```
 
-Machine-readable citation metadata: [CITATION.cff](CITATION.cff). No DOI or journal publication is claimed.
+Machine-readable citation metadata: [CITATION.cff](CITATION.cff), [CITATION.bib](CITATION.bib), [CodeMeta](codemeta.json), and [Zenodo deposit metadata](.zenodo.json). See [NOTICE](NOTICE). A DOI is not yet assigned and no journal publication is claimed. The [publication guide](PUBLICATION.md) records the remaining account-level steps for a versioned release and permanent archive.
 
 **Author / project owner:** Zakk Easterbrook. The research note, prototype and experiments were developed with AI assistance. The original code and raw data are included to support scrutiny rather than reliance on the claims alone.
 

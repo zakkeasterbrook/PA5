@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Predictive Atom 5 (PA5) — Zakk Easterbrook | AI Research</title>
+<meta name="description" content="Decision-certified KV-cache retrieval research by Zakk Easterbrook. Proof, reproducible Python experiments, original data and numerical audit.">
+<meta name="author" content="Zakk Easterbrook">
+<meta name="robots" content="index,follow">
+<meta name="citation_title" content="Predictive Atom 5 (PA5): Decision-Certified Key-Value Cache Retrieval for Efficient AI Inference">
+<meta name="citation_author" content="Easterbrook, Zakk">
+<meta name="citation_publication_date" content="2026/11/24">
+<meta name="citation_public_url" content="https://github.com/zakkeasterbrook/PA5">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Predictive Atom 5 (PA5): Decision-Certified Key-Value Cache Retrieval for Efficient AI Inference">
+<meta property="og:description" content="Preliminary AI-assisted research, source code, proof, original benchmarks and numerical erratum.">
+<link rel="canonical" href="https://zakkeasterbrook.github.io/PA5/">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": "Predictive Atom 5 (PA5): Decision-Certified Key-Value Cache Retrieval for Efficient AI Inference",
+  "alternateName": "PA5",
+  "author": {
+    "@type": "Person",
+    "name": "Zakk Easterbrook",
+    "url": "https://github.com/zakkeasterbrook"
+  },
+  "codeRepository": "https://github.com/zakkeasterbrook/PA5",
+  "version": "0.1.0",
+  "dateCreated": "2026-11-24",
+  "programmingLanguage": "Python",
+  "license": "https://www.apache.org/licenses/LICENSE-2.0",
+  "description": "Preliminary AI-assisted research by Zakk Easterbrook on progressive key-value cache retrieval with deterministic real-arithmetic error bounds for a single attention operation and a bias-free linear readout. Includes source code, mathematical proof, original synthetic CPU benchmarks and raw trial data, exact-rational tests, and a post-publication numerical erratum documenting an original float64 counterexample and an optional range-screened mitigation. Not peer-reviewed; no universal finite-precision, full-transformer, GPU, or state-of-the-art performance claim.",
+  "keywords": "artificial intelligence, machine learning, transformer attention, LLM inference, KV cache, key-value retrieval, adaptive inference, efficient attention, decision certification, numerical error bounds, argmax preservation, memory bandwidth, reproducible research"
+}</script>
+<style>
+:root{color-scheme:light dark;--bg:#101923;--panel:#182639;--ink:#f0f5fb;--muted:#a9b8c9;--accent:#77ddc9;--line:#304256}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,sans-serif}main{max-width:1030px;margin:auto;padding:58px 24px}a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}h1,h2{line-height:1.18;letter-spacing:-.035em}h1{font-size:clamp(2.25rem,6vw,4.7rem);margin:16px 0}h2{font-size:1.8rem;margin-top:48px}p{max-width:80ch}.eyebrow{color:var(--accent);font-size:.82rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}.subtitle{color:var(--muted);font-size:1.25rem}.actions{display:flex;flex-wrap:wrap;gap:14px;margin:26px 0}.actions a{display:inline-block;border:1px solid var(--line);border-radius:8px;padding:11px 16px;text-decoration:none;font-weight:650}.actions a:first-child{background:var(--accent);color:#10231f;border-color:var(--accent)}.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:30px 0}.metrics div{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px}.metrics strong{font-size:2rem;display:block;line-height:1.25}.muted{color:var(--muted)}.notice{border-left:3px solid var(--accent);padding:2px 16px;color:var(--muted)}pre{background:var(--panel);padding:16px;border-radius:8px;overflow:auto;font-size:13px}footer{border-top:1px solid var(--line);margin-top:48px;padding-top:20px;color:var(--muted)}li{margin:8px 0}a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+</style>
+</head>
+<body><main>
+<header><div class="eyebrow">PA5 / Research software / v0.1.0</div><h1>Predictive Atom 5</h1><p class="subtitle">Decision-certified key–value cache retrieval for efficient AI inference.</p><p>By <a href="https://github.com/zakkeasterbrook">Zakk Easterbrook</a> · November 24, 2026 · Apache-2.0</p><div class="actions"><a href="https://github.com/zakkeasterbrook/PA5">View the GitHub project</a><a href="https://github.com/zakkeasterbrook/PA5/blob/main/paper.md">Read the proof</a><a href="https://github.com/zakkeasterbrook/PA5/blob/main/AUDIT.md">Read the audit</a></div></header>
+<p class="notice"><strong>Preliminary, AI-assisted research.</strong> Not peer-reviewed. The theorem is for a restricted readout in exact real arithmetic. The prototype has a documented finite-precision counterexample; an optional mitigation is experimental.</p>
+<section><h2>Research question</h2><p>Can an attention calculation establish its winning decision before reading every original key and value? PA5 uses block centroids, analytic residual bounds, progressive retrieval, a strict decision-margin test, and a dense fallback. Original KV remains stored.</p><div class="metrics"><div><strong>94.5%</strong>Logical cache reads avoided on concentrated synthetic attention</div><div><strong>4.92×</strong>CPU speed ratio on that favorable geometry</div><div><strong>36,176</strong>Exact-rational local inequality checks; zero observed violations</div><div><strong>524,288</strong>Largest synthetic context evaluated</div></div><p class="muted">CPU figures exclude cache construction and do not measure physical DRAM traffic, GPU performance or end-to-end LLM acceleration. Random and tied workloads experienced slowdowns.</p></section>
+<section><h2>Reproduce and evaluate</h2><p>Clone the repository and install its pinned NumPy dependency. The verifier preserves original evidence, checks archived hashes and repeats the tests in a temporary directory.</p><pre><code>git clone https://github.com/zakkeasterbrook/PA5.git
+cd PA5
+python -m pip install -r requirements.txt
+python reproduce.py</code></pre><ul><li><a href="https://github.com/zakkeasterbrook/PA5/blob/main/summary.csv">Benchmark summary</a> and <a href="https://github.com/zakkeasterbrook/PA5/blob/main/trials.csv">raw trials</a></li><li><a href="https://github.com/zakkeasterbrook/PA5/blob/main/exact_check.py">Exact rational tests</a></li><li><a href="https://github.com/zakkeasterbrook/PA5/blob/main/audit_numerics.py">Numerical regression tests</a> and <a href="https://github.com/zakkeasterbrook/PA5/blob/main/AUDIT.md">known failure</a></li><li><a href="https://github.com/zakkeasterbrook/PA5/blob/main/AGENTS.md">Agent guide</a>, <a href="https://github.com/zakkeasterbrook/PA5/blob/main/llms.txt">LLM-readable index</a> and <a href="https://github.com/zakkeasterbrook/PA5/blob/main/ARTIFACTS.sha256">integrity manifest</a></li></ul></section>
+<section><h2>Cite this research</h2><p>Easterbrook, Z. (2026). <em>Predictive Atom 5 (PA5): Decision-Certified Key-Value Cache Retrieval for Efficient AI Inference</em> (v0.1.0) [Research software and preliminary research note]. <a href="https://github.com/zakkeasterbrook/PA5">https://github.com/zakkeasterbrook/PA5</a>.</p><p><a href="https://github.com/zakkeasterbrook/PA5/blob/main/CITATION.cff">CFF</a> · <a href="https://github.com/zakkeasterbrook/PA5/blob/main/CITATION.bib">BibTeX</a> · <a href="https://github.com/zakkeasterbrook/PA5/blob/main/codemeta.json">CodeMeta</a> · <a href="https://github.com/zakkeasterbrook/PA5/blob/main/NOTICE">Notice</a>. Cite the evaluated commit where possible. DOI pending; no journal publication is claimed.</p></section>
+<footer>Research and project by Zakk Easterbrook · <a href="https://github.com/zakkeasterbrook/PA5/blob/main/LICENSE">Apache License 2.0</a> · <a href="https://github.com/zakkeasterbrook/PA5/issues">Independent replications and counterexamples welcome</a>.</footer>
+</main></body></html>
