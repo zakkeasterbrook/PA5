@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this preliminary research, please cite this version."
+title: "Predictive Atom 5: Decision-certified dual key/value retrieval for attention"
+authors:
+  - family-names: Easterbrook
+    given-names: Zakk
+version: 0.1.0
+date-released: 2026-11-24
+repository-code: "https://github.com/zakkeasterbrook/PA5"
+abstract: "A preliminary AI-assisted study of selective dual key/value retrieval using analytic real-arithmetic bounds for a bias-free attention readout."

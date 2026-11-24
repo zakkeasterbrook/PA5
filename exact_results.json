@@ -1,0 +1,7 @@
+{
+  "cases": 6000,
+  "local_bound_checks": 36176,
+  "accepted": 2027,
+  "forced_ties": 1200,
+  "violations": 0
+}
