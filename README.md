@@ -47,7 +47,7 @@ These are deliberately constructed fixtures, not real LLM KV caches. Timing is t
 - [Long-context benchmark](benchmark.py), [summary](summary.csv)
 - [Citation metadata](CITATION.cff)
 
-The scripts regenerate per-trial CSV files locally. Raw original trial logs are preserved in the accompanying downloadable research archive; this GitHub version contains the aggregate measurements and reproducibility scripts.
+The original per-trial logs are included: [long-context trials](trials.csv), [adversarial trials](stress_trials.csv), and [quick trials](quick.csv). The scripts also regenerate these CSVs locally. The original experiment data and tested source files are preserved in a separate downloadable archive.
 
 ## Open questions
 

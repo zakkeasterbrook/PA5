@@ -68,4 +68,4 @@ This list is not a comprehensive literature or patent search. A systematic compa
 
 ## 7. Reproducibility and disclosure
 
-Run the exact and numerical test scripts from the repository root following README.md. Seeds, code, and aggregate results are included. Per-trial outputs can be regenerated; original raw CSVs are separately preserved. This preliminary note, code, and experiments were developed with AI assistance at the direction of the project owner. No peer review or independent replication has been completed.
+Run the exact and numerical test scripts from the repository root following README.md. Seeds, code, and aggregate results are included. Original raw per-trial CSVs are included in the repository and can be regenerated with the scripts. This preliminary note, code, and experiments were developed with AI assistance at the direction of the project owner. No peer review or independent replication has been completed.
