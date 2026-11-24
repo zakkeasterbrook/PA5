@@ -18,7 +18,7 @@ permissions:
 
 jobs:
   reproduce:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     env:
       OPENBLAS_NUM_THREADS: '1'
