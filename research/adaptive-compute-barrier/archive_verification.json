@@ -1,0 +1,20 @@
+{
+  "archived_multistage_certificates": [
+    {
+      "model": "GPT-6 Astra",
+      "epsilon": "1/100",
+      "certified_cap": "1176137763/1428500",
+      "certified_loss": "1/100",
+      "fixed_cap": "1176137763/1428500",
+      "status": "pass"
+    },
+    {
+      "model": "GPT-5.6 Sol",
+      "epsilon": "1/100",
+      "certified_cap": "636605384420035289/5000000000381000",
+      "certified_loss": "1/100",
+      "fixed_cap": "75787871/595250",
+      "status": "pass"
+    }
+  ]
+}

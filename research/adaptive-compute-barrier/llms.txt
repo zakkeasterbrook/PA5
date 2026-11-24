@@ -1,0 +1,12 @@
+# The Adaptive Compute Barrier
+
+> Preliminary AI-assisted mathematical research by Zakk Easterbrook, November 24, 2026, on robust score-aware inference budgets. The exact two-checkpoint theorem uses a finite score grid, monotonicity, fixed means and interior expected-loss tolerance. No world-first or real-world savings claim. The original source data are METR's November 20 report.
+
+Canonical source: https://github.com/zakkeasterbrook/PA5/tree/main/research/adaptive-compute-barrier
+
+## Research and data
+- [Proof](https://raw.githubusercontent.com/zakkeasterbrook/PA5/main/research/adaptive-compute-barrier/paper.md): Exact moment bound, if-and-only-if barrier, optimal two-variable rule, and restricted multistage extension.
+- [Data provenance](https://raw.githubusercontent.com/zakkeasterbrook/PA5/main/research/adaptive-compute-barrier/DATA_SOURCES.md): Third-party source and conditional assumptions.
+- [Exact optimizer](https://raw.githubusercontent.com/zakkeasterbrook/PA5/main/research/adaptive-compute-barrier/exact_policy.py): Rational policy solver.
+- [Reproduction](https://raw.githubusercontent.com/zakkeasterbrook/PA5/main/research/adaptive-compute-barrier/reproduce.py): Verify archived evidence and rerun math tests.
+- [Citation](https://raw.githubusercontent.com/zakkeasterbrook/PA5/main/research/adaptive-compute-barrier/CITATION.cff): Author and scholarly metadata. Cite the evaluated commit; cite METR for its data.

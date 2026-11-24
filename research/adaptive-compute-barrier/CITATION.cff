@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Please cite this preliminary AI-assisted research note and software, including the evaluated commit. Cite METR separately for its source measurements."
+type: software
+title: "The Adaptive Compute Barrier: A Sharp Minimax Boundary for Score-Aware AI Inference Budgets"
+authors:
+  - family-names: Easterbrook
+    given-names: Zakk
+version: 0.1.0
+date-released: 2026-11-24
+url: "https://github.com/zakkeasterbrook/PA5/tree/main/research/adaptive-compute-barrier"
+repository-code: "https://github.com/zakkeasterbrook/PA5"
+license: Apache-2.0
+abstract: "A preliminary AI-assisted mathematical study of distributionally robust score-based early stopping with known aggregate means, an exact two-checkpoint criterion and rational optimizer, a restricted multistage extension, and an application to selected November 2026 METR data. Not peer-reviewed; novelty is not established."
+keywords:
+  - adaptive inference
+  - distributionally robust optimization
+  - optimal stopping
+  - inference budgets
+  - test-time compute
+  - minimax
+  - AI research
+  - mathematical proof
+  - reproducible research

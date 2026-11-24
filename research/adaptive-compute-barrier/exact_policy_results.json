@@ -1,0 +1,60 @@
+{
+  "counts": {
+    "independent_exact_optimizer_comparisons": 525,
+    "strict_improvement_cases": 237,
+    "no_improvement_cases": 288
+  },
+  "max_independent_LP_error": 2.220446049250313e-15,
+  "examples": [
+    {
+      "K": 21,
+      "mu": "41/42",
+      "nu": "1",
+      "eps": "1/84",
+      "fixed_fraction": "1/2",
+      "optimal_adaptive_fraction": "3/4",
+      "worst_loss": "1/84",
+      "a": "-19/2",
+      "b": "21/2",
+      "policy": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/2",
+        "1"
+      ]
+    },
+    {
+      "K": 1,
+      "mu": "3/5",
+      "nu": "9/10",
+      "eps": "3/100",
+      "fixed_fraction": "1/10",
+      "optimal_adaptive_fraction": "16/25",
+      "worst_loss": "3/100",
+      "a": "1/10",
+      "b": "9/10",
+      "policy": [
+        "1/10",
+        "1"
+      ]
+    }
+  ]
+}

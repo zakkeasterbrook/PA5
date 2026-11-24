@@ -1,0 +1,61 @@
+{
+  "exact": {
+    "exact_moment_witness_cases": 6336,
+    "exact_no_gain_certificates": 5044,
+    "exact_arbitrary_policy_checks": 10088,
+    "exact_strict_improvement_certificates": 3876
+  },
+  "independent": {
+    "independent_joint_law_LP_checks": 840,
+    "independent_strict_gain_policy_LP_checks": 167,
+    "independent_no_gain_policy_LP_checks": 253,
+    "max_joint_LP_absolute_error": 9.492406860545088e-15,
+    "min_certified_positive_gap": 4.483500717360115e-05
+  },
+  "data": [
+    {
+      "model": "GPT-6 Astra",
+      "checkpoints": 48,
+      "pairs": 1128,
+      "flat_pairs": 27,
+      "certified_no_gain_pairs": 1101,
+      "strict_gain_pairs": 0,
+      "final_mean": "77619/100000",
+      "first_cost": "300437/10000",
+      "last_cost": "454659/500"
+    },
+    {
+      "model": "GPT-5.6 Sol",
+      "checkpoints": 50,
+      "pairs": 1225,
+      "flat_pairs": 64,
+      "certified_no_gain_pairs": 1161,
+      "strict_gain_pairs": 0,
+      "final_mean": "207143/500000",
+      "first_cost": "101183/10000",
+      "last_cost": "354069/1000"
+    }
+  ],
+  "examples": [
+    {
+      "K": 21,
+      "mu": "41/42",
+      "nu": "1",
+      "eps": "1/84",
+      "fixed_saved_fraction": "1/2",
+      "certified_adaptive_saved_fraction": "41/80",
+      "worst_loss": "1/84",
+      "numerical_optimum": 0.75
+    },
+    {
+      "K": 1,
+      "mu": "3/5",
+      "nu": "9/10",
+      "eps": "3/100",
+      "fixed_saved_fraction": "1/10",
+      "certified_adaptive_saved_fraction": "16/25",
+      "worst_loss": "3/100",
+      "numerical_optimum": 0.64
+    }
+  ]
+}

@@ -8,6 +8,8 @@ Zakk Easterbrook · November 24, 2026 · Research prototype v0.1.0 · [Apache-2.
 
 [Research paper and proof](paper.md) · [Try PA5](#quickstart) · [Benchmark data](#experimental-results) · [Reproduce the results](#reproducibility) · [Cite this research](#citation)
 
+**New companion research:** [The Adaptive Compute Barrier (ACB)](research/adaptive-compute-barrier/) — a sharp two-checkpoint minimax result for score-aware AI inference budgets, with exact proofs, a rational optimizer, and a conditional analysis of November 2026 METR data. It is a separate preliminary study by Zakk Easterbrook; the original PA5 attention prototype and its claims remain unchanged.
+
 **For AI agents and automated research tools:** [AGENTS.md](AGENTS.md) · [Plain-text research index](llms.txt) · [CITATION.cff](CITATION.cff) · [BibTeX](CITATION.bib) · [CodeMeta](codemeta.json). Author: [Zakk Easterbrook](https://github.com/zakkeasterbrook). Refer to the numerical erratum below when evaluating or citing results.
 
 > **Research status:** Preliminary, AI-assisted research; not peer-reviewed. The mathematical guarantee concerns an attention operation with a bias-free linear readout in exact real arithmetic. The numerical experiments use synthetic data, not end-to-end pretrained language model inference.

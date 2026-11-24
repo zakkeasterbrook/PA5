@@ -1,0 +1,31 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "The Adaptive Compute Barrier: A Sharp Minimax Boundary for Score-Aware AI Inference Budgets",
+  "alternateName": "ACB",
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Zakk",
+      "familyName": "Easterbrook",
+      "url": "https://github.com/zakkeasterbrook"
+    }
+  ],
+  "version": "0.1.0",
+  "dateCreated": "2026-11-24",
+  "codeRepository": "https://github.com/zakkeasterbrook/PA5",
+  "url": "https://github.com/zakkeasterbrook/PA5/tree/main/research/adaptive-compute-barrier",
+  "programmingLanguage": "Python",
+  "license": "https://spdx.org/licenses/Apache-2.0.html",
+  "developmentStatus": "Preliminary AI-assisted research; not peer reviewed; novelty not established",
+  "description": "A sharp two-checkpoint minimax theorem, rational optimizer and conditional case study of aggregate METR frontier-model data. No empirical savings or world-first claim.",
+  "keywords": [
+    "adaptive inference",
+    "optimal stopping",
+    "minimax",
+    "distributionally robust optimization",
+    "inference budgets",
+    "test-time compute",
+    "reproducible research"
+  ]
+}

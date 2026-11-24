@@ -58,3 +58,7 @@ The original full benchmark is `python benchmark.py --out reproduced_trials.csv`
 ## Research contributions
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for replication guidance. Report discrepancies, proof counterexamples, and unfavorable benchmark outcomes as well as favorable results. Distinguish the theorem from the empirical prototype. New claims should be supported by reproducible evidence and clearly scoped to their assumptions.
+
+## Companion research: Adaptive Compute Barrier
+
+For the distinct two-checkpoint minimax stopping theorem, optimizer and METR case study, see [ACB](research/adaptive-compute-barrier/README.md), its [proof](research/adaptive-compute-barrier/paper.md), [agent guide](research/adaptive-compute-barrier/AGENTS.md), and [citation](research/adaptive-compute-barrier/CITATION.cff). Do not conflate ACB's mathematical claims with PA5 attention or assert verified novelty or empirical cost savings.

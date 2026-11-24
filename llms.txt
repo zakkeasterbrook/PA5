@@ -44,3 +44,9 @@ Scientific scope: single attention operation, bias-free linear readout; theorem 
 ## Optional
 
 - [Contributing and replication guidance](https://raw.githubusercontent.com/zakkeasterbrook/PA5/main/CONTRIBUTING.md): How to report replications and counterexamples.
+
+## Companion research: Adaptive Compute Barrier
+
+- [ACB research overview](https://raw.githubusercontent.com/zakkeasterbrook/PA5/main/research/adaptive-compute-barrier/README.md): Sharp two-checkpoint minimax boundary under known means, conditional METR case study, exact optimization and limitations.
+- [ACB proof](https://raw.githubusercontent.com/zakkeasterbrook/PA5/main/research/adaptive-compute-barrier/paper.md): Full mathematical proof and restricted multistage extension.
+- [ACB research index](https://raw.githubusercontent.com/zakkeasterbrook/PA5/main/research/adaptive-compute-barrier/llms.txt): Code, source-data attribution and citation.
