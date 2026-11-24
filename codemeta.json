@@ -1,0 +1,35 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "Predictive Atom 5 (PA5): Decision-Certified Key-Value Cache Retrieval for Efficient AI Inference",
+  "description": "Preliminary AI-assisted research prototype for progressive key-value retrieval with real-arithmetic decision bounds for a bias-free attention readout. Includes exact-rational checks, synthetic CPU benchmarks, original trial data, proof and limitations.",
+  "codeRepository": "https://github.com/zakkeasterbrook/PA5",
+  "url": "https://github.com/zakkeasterbrook/PA5",
+  "version": "0.1.0",
+  "dateCreated": "2026-11-24",
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Zakk",
+      "familyName": "Easterbrook"
+    }
+  ],
+  "programmingLanguage": "Python",
+  "runtimePlatform": "Python 3.13.5; NumPy 2.3.5 tested",
+  "developmentStatus": "Research prototype; not peer-reviewed",
+  "keywords": [
+    "artificial intelligence",
+    "machine learning",
+    "transformer attention",
+    "LLM inference",
+    "KV cache",
+    "key-value retrieval",
+    "adaptive inference",
+    "efficient attention",
+    "decision certification",
+    "numerical error bounds",
+    "argmax preservation",
+    "memory bandwidth",
+    "reproducible research"
+  ]
+}
